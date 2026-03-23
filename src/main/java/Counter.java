@@ -20,7 +20,7 @@ public class Counter {
         // TODO: loop through arr
         //       if the element is strictly greater than threshold, increment the counter\
         for(int i: arr){
-            if(i>threshold) counter1 += 1;
+            if(i > threshold) counter1++;
         }
         // TODO: return the counter
         return counter1; // placeholder
