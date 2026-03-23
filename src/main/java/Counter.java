@@ -15,12 +15,15 @@ public class Counter {
      */
     public int countAbove(int[] arr, int threshold) {
         // TODO: initialize a counter to 0
+        int counter1 = 0;
 
         // TODO: loop through arr
-        //       if the element is strictly greater than threshold, increment the counter
-
+        //       if the element is strictly greater than threshold, increment the counter\
+        for(int i: arr){
+            if(i > threshold) counter1++;
+        }
         // TODO: return the counter
-        return 0; // placeholder
+        return counter1; // placeholder
     }
 
     /**
@@ -37,12 +40,14 @@ public class Counter {
      */
     public int countBelow(int[] arr, int threshold) {
         // TODO: initialize a counter to 0
-
+        int counter2 = 0;
         // TODO: loop through arr
         //       if the element is strictly less than threshold, increment the counter
-
+        for(int i: arr){
+            if(i < threshold) counter2++;
+        }
         // TODO: return the counter
-        return 0; // placeholder
+        return counter2; // placeholder
     }
 
     /**
@@ -59,11 +64,14 @@ public class Counter {
      */
     public int countEqual(int[] arr, int target) {
         // TODO: initialize a counter to 0
-
+        int counter3 = 0;
         // TODO: loop through arr
         //       if the element equals target, increment the counter
+        for(int i = 0; i < arr.length; i++){
+            if (arr[i] == target) counter3++;
+        }
 
         // TODO: return the counter
-        return 0; // placeholder
+        return counter3; // placeholder
     }
 }

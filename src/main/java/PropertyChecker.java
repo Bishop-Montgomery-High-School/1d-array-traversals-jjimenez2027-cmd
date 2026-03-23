@@ -18,12 +18,14 @@ public class PropertyChecker {
      */
     public boolean hasPositive(int[] arr) {
         // TODO: initialize a boolean flag to false
-
+        boolean flag = false;
         // TODO: loop through arr
         //       if the element is greater than 0, set the flag to true
-
+        for(int i: arr){
+            if(i > 0) flag = true;
+        }
         // TODO: return the flag
-        return false; // placeholder
+        return flag; // placeholder
     }
 
     /**
@@ -44,11 +46,13 @@ public class PropertyChecker {
      */
     public boolean allPositive(int[] arr) {
         // TODO: initialize a boolean flag to true
-
+        boolean flag2 = true;
         // TODO: loop through arr
         //       if the element is NOT greater than 0, set the flag to false
-
+        for(int i : arr){
+            if(i <= 0) flag2 = false;
+        }
         // TODO: return the flag
-        return false; // placeholder
+        return flag2; // placeholder
     }
 }

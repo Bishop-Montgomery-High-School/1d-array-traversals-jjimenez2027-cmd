@@ -1,8 +1,8 @@
 public class IndexFinder {
 
-    /**
-     * Returns the index of the smallest value in the array.
-     * If the minimum value appears more than once, return the index
+    /**of the smallest value in the array.
+     * If the minimum v
+     *      * Returns the index alue appears more than once, return the index
      * of its FIRST occurrence.
      *
      * Traversal strategy: track the index of the current minimum,
@@ -18,12 +18,15 @@ public class IndexFinder {
      */
     public int indexOfMin(int[] arr) {
         // TODO: initialize a variable to track the index of the minimum (start at 0)
-
+        int min = 0;
         // TODO: loop from index 1 to arr.length - 1
         //       if arr[i] is strictly less than arr[your tracked index], update your tracked index
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] < arr[min]) min = i;
+        }
 
         // TODO: return the tracked index
-        return 0; // placeholder
+        return min; // placeholder
     }
 
     /**
@@ -42,11 +45,13 @@ public class IndexFinder {
      */
     public int indexOfMax(int[] arr) {
         // TODO: initialize a variable to track the index of the maximum (start at 0)
-
+        int max = 0;
         // TODO: loop from index 1 to arr.length - 1
         //       if arr[i] is strictly greater than arr[your tracked index], update your tracked index
-
+        for(int i = 0; i < arr.length; i++){
+            if (arr[i] > arr[max]) max = i;
+        }
         // TODO: return the tracked index
-        return 0; // placeholder
+        return max; // placeholder
     }
 }
